@@ -1,0 +1,41 @@
+class Transistor
+   def initialize (p1t,p2t,p3t,p1s,p2s,p3s,p1c,p2c,p3c)
+        @p1t = p1t
+        @p2t = p2t
+        @p3t = p3t
+        @p1s = p1s
+        @p2s = p2s
+        @p3s = p1s
+        @p1c = p1c
+        @p2c = p2c
+        @p3c = p3c
+    end
+    
+    def showvalues
+        puts "p1t = #{@p1t} "
+        
+        puts "p2t = #{@p2t} "
+        
+        puts "p3t = #{@p3t} "
+        
+        puts "p1s = #{@p1s} "
+        
+        puts "p2s = #{@p2s} "
+        
+        puts "p3s = #{@p3s} "
+        
+        puts "p1c = #{@p1c} "
+        
+        puts "p2c = #{@p2c} "
+        
+        puts "p3c = #{@p3c} "
+    end
+end
+
+def ConnectPins(x,y)
+    x = y
+end
+
+a = Transistor.new(1,2,3,4,5,6,7,8,9)
+
+a.showvalues
