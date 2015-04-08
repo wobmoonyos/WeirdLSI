@@ -1,0 +1,19 @@
+class TransistorHash
+    attr_accessor :type, :state, :pin,:connection
+    
+    def initialize 
+        @type = { 0 => 'null', 1 => 'PNP-BJT', 2 => 'NPN-BJT', 3 => 'P-CHANNEL-MOSFET', 4 => 'N-CHANNEL-MOSFET', 5 => 'P-CHANNEL-JFET', 6 => 'N-CHANNEL-JFET' }
+        @state = { 0 => 'null', 1 => 'OFF', 2 => 'ON', 3 => 'OTHER'}
+        @pin = { 0 => 'null' , 1 => 'EMITTER', 2 => 'BASE', 3 => 'COLLECTOR', 4 => 'SOURCE', 5 => 'GATE', 6 => 'DRAIN', 7 => 'OTHER'}
+    end
+    
+    def add_connection_to_from(a,b)
+        @connection = @connection, "TransistorPin #{a} is now connected to TransistorPin #{b} \n"
+    end
+
+end
+
+puts A = TransistorHash.new
+
+A.add_connection_to_from("b","a")
+
